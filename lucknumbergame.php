@@ -26,7 +26,7 @@
 	
 	
 	<body>
-		<h1 class = "game-heading">Lucky Number Game/h1>
+		<h1 class = "game-heading">Lucky Number Game</h1>
 
 <canvas
 width="400"
@@ -64,7 +64,7 @@ function setUp(){
 function baseSetUp(e){
     
     remove(clicktostart);
-    num1 = readInt("So? From? ");
+    num1 = readInt("From? ");
     num2 = readInt("To? ");
     corrnum = Randomizer.nextInt(num1, num2);
     numGuess = new Text("OK! Click to Start!", "30pt Arial");
@@ -112,7 +112,7 @@ function youWin(){
 	    startAgain.setPosition(getWidth()/2 - startAgain.getWidth()/2, getHeight()* 5/6);
 	    add(startAgain);
 	if(chances == 1){
-	        var text = new Text("In one Chance! RU INSIDE MY Operating System!!?", "12pt Arial");
+	        var text = new Text("In one try! You read my mind!!", "12pt Arial");
 	        text.setColor(Color.red);
 	        text.setPosition(getWidth()/2 - text.getWidth()/2, getHeight()*4/6);
 	        add(text);
